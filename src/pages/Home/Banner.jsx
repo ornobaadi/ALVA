@@ -3,7 +3,7 @@ import { FaPlayCircle } from "react-icons/fa";
 const Banner = () => {
     return (
         <div>
-            <div className="inter-tight hero bg-neutral text-white min-h-screen">
+            <div className="inter-tight hero bg-neutral text-white min-h-screen rounded-b-2xl">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img
                         src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"

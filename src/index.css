@@ -1,2 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.active {
+    /* Add your desired active link styles here */
+    font-weight: 600;
+    color: #00D3BB;
+     /* Example background color */
+}
