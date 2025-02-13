@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Database, Layout, Smartphone, Server, Cloud, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

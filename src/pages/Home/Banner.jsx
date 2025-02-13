@@ -4,7 +4,7 @@ import Lottie from 'lottie-react';
 
 const Banner = () => {
     return (
-        <section className="w-full bg-neutral text-white rounded-b-2xl">
+        <section className="w-full bg-neutral text-white rounded-b-2xl min-h-screen">
             <div className="inter-tight max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 <div className="flex flex-col items-center space-y-12">
                     {/* Text Content */}
@@ -30,7 +30,7 @@ const Banner = () => {
                     {/* Image Container */}
                     <div className="">
                         <div className="relative rounded-lg overflow-hidden shadow-xl">
-                            <Lottie className='w-[600px]' animationData={banner} loop={true} />
+                            <Lottie className='w-[300px] md:w-[600px]' animationData={banner} loop={true} />
                         </div>
                     </div>
                 </div>
