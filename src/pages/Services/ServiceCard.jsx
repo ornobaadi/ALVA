@@ -21,7 +21,7 @@ export const services = [
     {
         icon: Cloud,
         title: "SaaS Application Development",
-        description: "Develop scalable Software-as-a-Service solutions with cloud integration and subscription management."
+        description: "Scalable Software-as-a-Service solutions with cloud integration and subscription management."
     },
     {
         icon: Code,
