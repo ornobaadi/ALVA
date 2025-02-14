@@ -1,3 +1,4 @@
+import TeamMembers from "./TeamMembers";
 
 const Team = () => {
     return (
@@ -13,6 +14,7 @@ const Team = () => {
                             Our team is driven by a commitment to excellence and a relentless pursuit of success.
                         </p>
                     </div>
+                    <TeamMembers></TeamMembers>
                 </div>
             </div>
         </section>
