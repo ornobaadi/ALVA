@@ -1,6 +1,7 @@
 import { FaPlayCircle } from 'react-icons/fa';
 import banner from "../../../public/banner.json"
 import Lottie from 'lottie-react';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -20,10 +21,10 @@ const Banner = () => {
                             <button className="btn btn-accent px-6">
                                 Get Started
                             </button>
-                            <button className="btn btn-accent btn-outline px-4 flex items-center gap-2">
+                            <Link to="https://drive.google.com/file/d/19zeRCzoSM6ikZPmBVBB_HI_Im87kdft4/view?usp=sharing" className="btn btn-accent btn-outline px-4 flex items-center gap-2">
                                 <FaPlayCircle />
                                 Watch Demo
-                            </button>
+                            </Link>
                         </div>
                     </div>
 

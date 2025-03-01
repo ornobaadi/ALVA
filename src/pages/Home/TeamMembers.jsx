@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import { Github, Linkedin, Mail } from 'lucide-react';
 
 const MemberCard = ({ name, role, bio, socials, image }) => {
     return (
