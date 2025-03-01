@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 const MemberCard = ({ name, role, bio, socials, image }) => {
     return (
-        <div className="relative group bg-white rounded-xl overflow-hidden shadow-lg h-[400px] transition-all duration-300 hover:shadow-xl">
+        <div className="relative group hover:cursor-default bg-white rounded-xl overflow-hidden shadow-lg h-[400px] transition-all duration-300 hover:shadow-xl">
             {/* Image Container */}
             <div className="absolute inset-0">
                 <img
@@ -20,7 +20,7 @@ const MemberCard = ({ name, role, bio, socials, image }) => {
             {/* Content Container */}
             <div className="absolute inset-0 flex flex-col">
                 {/* Main Content - Animated Container */}
-                <div className="flex flex-col justify-end h-full transition-all duration-500 transform group-hover:translate-y-[-15%] p-6">
+                <div className="flex flex-col justify-end h-full transition-all duration-500 transform group-hover:translate-y-[-5%] p-6">
                     {/* Name and Role */}
                     <h3 className="text-xl font-semibold text-white mb-1 transition-all duration-500">
                         {name}
@@ -34,40 +34,6 @@ const MemberCard = ({ name, role, bio, socials, image }) => {
                         <p className="text-gray-300 text-sm">
                             {bio}
                         </p>
-                    </div>
-                </div>
-
-                {/* Social Links Container - Fixed at bottom, revealed on hover */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-all duration-500">
-                    <div className="flex gap-4 justify-center">
-                        {socials.linkedin && (
-                            <a 
-                                href={socials.linkedin} 
-                                className="text-gray-300 hover:text-white transition-colors p-2"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Linkedin className="w-5 h-5" />
-                            </a>
-                        )}
-                        {socials.github && (
-                            <a 
-                                href={socials.github} 
-                                className="text-gray-300 hover:text-white transition-colors p-2"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <Github className="w-5 h-5" />
-                            </a>
-                        )}
-                        {socials.email && (
-                            <a 
-                                href={`mailto:${socials.email}`} 
-                                className="text-gray-300 hover:text-white transition-colors p-2"
-                            >
-                                <Mail className="w-5 h-5" />
-                            </a>
-                        )}
                     </div>
                 </div>
             </div>
