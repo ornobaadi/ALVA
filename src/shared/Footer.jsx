@@ -1,4 +1,4 @@
-import { Github, Twitch, Youtube } from "lucide-react";
+import { Facebook, Github, Instagram, Twitch, Twitter, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -22,6 +22,15 @@ const Footer = () => {
                     </Link>
                     <Link className="hover:text-purple-700" to="https://www.twitch.tv/nextgenalva">
                         <Twitch />
+                    </Link>
+                    <Link className="hover:text-blue-500" to="https://www.facebook.com/people/Alva-Gen/pfbid02A3WWk6svHvrU8qCoNvjbaP5EU1jGrJue4CMmMnsbsBwoqNJ5b5vThLMHV5Rw6atKl/">
+                        <Facebook />
+                    </Link>
+                    <Link className="hover:text-cyan-400" to="https://x.com/NextGenAlva">
+                    <Twitter />
+                    </Link>
+                    <Link className="hover:text-pink-500" to="https://www.instagram.com/nextgenalva/">
+                        <Instagram />
                     </Link>
                 </div>
             </nav>
