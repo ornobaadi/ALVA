@@ -1,9 +1,11 @@
-import { FaPlayCircle } from 'react-icons/fa';
-import banner from "../../../public/banner.json"
-import Lottie from 'lottie-react';
-import { Link } from 'react-router-dom';
+import { useState } from "react";
+import { FaPlayCircle } from "react-icons/fa";
+import banner from "../../../public/banner.json";
+import Lottie from "lottie-react";
 
 const Banner = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <section className="w-full bg-neutral text-white rounded-b-2xl min-h-screen">
             <div className="inter-tight max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -18,24 +20,50 @@ const Banner = () => {
                             From frontend to full-stack, we bring your ideas to life.
                         </p>
                         <div className="mt-8 flex flex-wrap justify-center gap-4">
-                            <button className="btn btn-accent px-6">
-                                Get Started
-                            </button>
-                            <Link to="https://drive.google.com/file/d/19zeRCzoSM6ikZPmBVBB_HI_Im87kdft4/view?usp=sharing" className="btn btn-accent btn-outline px-4 flex items-center gap-2">
+                            <button className="btn btn-accent px-6">Get Started</button>
+                            <button
+                                onClick={() => setIsOpen(true)}
+                                className="btn btn-accent btn-outline px-4 flex items-center gap-2"
+                            >
                                 <FaPlayCircle />
                                 Watch Demo
-                            </Link>
+                            </button>
                         </div>
                     </div>
 
-                    {/* Image Container */}
-                    <div className="">
-                        <div className="relative rounded-lg overflow-hidden shadow-xl">
-                            <Lottie className='w-[300px] md:w-[600px]' animationData={banner} loop={true} />
-                        </div>
+                    {/* Animation Container */}
+                    <div className="relative rounded-lg overflow-hidden shadow-xl">
+                        <Lottie className="w-[300px] md:w-[600px]" animationData={banner} loop={true} />
                     </div>
                 </div>
             </div>
+
+            {/* Popup Modal */}
+            {isOpen && (
+                <div className="fixed inset-0 flex items-center justify-center z-50 bg-opacity-40 backdrop-blur-md">
+                    <div className="relative bg-transparent w-[90%] md:w-[80%] lg:w-[70%] max-w-4xl">
+                        {/* Close Button */}
+                        <button
+                            onClick={() => setIsOpen(false)}
+                            className="absolute top-[-40px] right-0 text-white text-3xl font-bold cursor-pointer"
+                        >
+                            ✕
+                        </button>
+
+                        {/* Embedded YouTube Video */}
+                        <div className="relative w-full aspect-[16/9]">
+                            <iframe
+                                className="w-full h-full rounded-lg border-3 border-white/30 shadow-lg"
+                                src="https://www.youtube.com/embed/84wpM5a3EK4?autoplay=1"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            )}
         </section>
     );
 };
