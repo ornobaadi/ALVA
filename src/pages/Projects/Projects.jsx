@@ -118,7 +118,7 @@ const Projects = () => {
                     {/* Header */}
                     <div className="text-center max-w-3xl mx-auto">
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
-                            My Projects
+                            Our Projects
                         </h1>
                         <p className="mt-6 text-lg sm:text-xl text-gray-600 mx-auto">
                             A collection of my recent work showcasing my skills and experience in web development.

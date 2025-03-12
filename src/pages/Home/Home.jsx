@@ -6,10 +6,10 @@ import Team from "./Team";
 const Home = () => {
     return (
         <div>
-            <Banner></Banner>
-            <Services></Services>
-            <Clients></Clients>
-            <Team></Team>
+                <Banner></Banner>
+                <Services></Services>
+                <Clients></Clients>
+                <Team></Team>
         </div>
     );
 };

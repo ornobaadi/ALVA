@@ -17,7 +17,7 @@ const Clients = () => {
     };
 
     return (
-        <section className="inter-tight bg-neutral text-white py-12 sm:py-16 lg:py-20 rounded-xl">
+        <section className="inter-tight bg-neutral text-white py-12 sm:py-16 lg:py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">
                     {/* Mobile/Tablet Title */}
