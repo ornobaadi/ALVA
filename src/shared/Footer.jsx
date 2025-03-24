@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="inter-tight footer footer-horizontal footer-center bg-neutral text-primary-content p-10">
+        <footer className="inter-tight footer footer-horizontal footer-center text-primary-content p-10">
             <aside>
                 <img className="w-16" src="/Alva logo.png" alt="" />
                 <h2 className="font-bold text-base">Nextgen ALVA</h2>

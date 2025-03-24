@@ -2,7 +2,7 @@ import TeamMembers from "./TeamMembers";
 
 const Team = () => {
     return (
-        <section className="w-full bg-neutral text-white inter-tight">
+        <section className="w-full text-white inter-tight">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 <div className="flex flex-col items-center space-y-12">
                     {/* Text Content */}

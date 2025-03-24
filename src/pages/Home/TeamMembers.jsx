@@ -67,7 +67,7 @@ const MemberCard = ({ name, role, bio, socials, image, details }) => {
 
             {/* Modal */}
             {isModalOpen && (
-                <div className="fixed inset-0 bg-black backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fade-in">
+                <div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fade-in">
                     <div
                         ref={modalRef}
                         className="bg-white/10 backdrop-blur-lg border border-white/10 rounded-xl w-full max-w-5xl max-h-[90vh] overflow-y-auto shadow-2xl"
