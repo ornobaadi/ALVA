@@ -7,7 +7,7 @@ const Banner = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <section className="w-full bg-neutral text-white rounded-b-2xl min-h-screen">
+        <section className="w-full bg-neutral text-white min-h-screen">
             <div className="inter-tight max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
                 <div className="flex flex-col items-center space-y-12">
                     {/* Text Content */}
